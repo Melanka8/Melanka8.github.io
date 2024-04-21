@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Recipes page for the web course">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-first">
+            <div class="logo">
+                <img src="logo.svg" width="90" alt="company's 'logo">
+                <p>Recipes</p>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Find a recipe or ingredient">
+                <button type="button" id="search-button"><img src="search-icon.svg" alt="Search icon"></button>
+            </div>
+
+
+            <div class="social-media">
+                <p class="follow-text">Follow us</p>
+                <img src="logo_instagram.svg" width="30" alt="instagram logo">
+                <img src="logo_facebook.svg" width="30" alt="facebook logo">
+                <img src="logo_twitter.svg" width="30" alt="twitter logo">
+            </div>
+        </div>
+
+        <div class="header-navigation">
+            <nav>
+                <div class="dropdown">
+                    <button class="dropbtn">&#9776</button>
+                    <div class="dropdown-content">
+                        <a class ="navigation" href="#">DINNERS</a>
+                        <a class ="navigation" href="#">MEALS</a>
+                        <a class ="navigation" href="#">INGRIDIENTS</a>
+                        <a class ="navigation" href="#">CUISINES</a>
+                        <a class ="navigation" href="#">KITCHEN TIPS</a>
+                        <a class ="navigation" href="#">NEWS</a>
+                        <a class ="navigation" href="#">ABOUT US</a>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="video-container">
+            <video autoplay muted loop id="video-bg">
+                <source src="kitchen.mp4" type="video/mp4">
+            </video>
+            <section class="main-text">
+                <h1>Recipes</h1>
+                <p>
+                    Discover everyday cooking inspiration on Recipes, where you can explore recipes, chefs, videos, and tutorials tailored to your favorite foods and the friends you keep up with.
+                </p>
+            </section>
+        </section>
+
+        <section class="explore-text">
+            <h2>Explore recipes</h2>
+        </section>
+
+        <section class="recipe-grid">
+            <div class="recipe-card" onmouseover="showRecipeInfo('soup')" onmouseout="hideRecipeInfo('soup')">
+                <img src="chicken soup.jpg" alt="Recipe Image Chicken Soup">
+                <p class="category">SOUP RECIPES</p>
+                <p class="recipe-name">Creamy Chicken Vegetable Soup</p>
+                <div class="recipe-info" id="soup">
+                    <h2>Ingredients:</h2>
+                    <ul>
+                        <li>1 lb chicken breast</li>
+                        <li>2 cups mixed vegetables</li>
+                        <li>1 onion, chopped</li>
+                    </ul>
+                    <h2>Instructions:</h2>
+                    <ul>
+                        <li>In a large pot, combine chicken breast, mixed vegetables, chopped onion, and enough water to cover.</li>
+                        <li>Bring to a boil, then reduce heat and simmer for 20 minutes or until chicken is cooked through and vegetables are tender.</li>
+                        <li>Remove chicken from pot, shred with two forks, and return to pot.</li>
+                        <li>Stir in cream and season with salt and pepper to taste. Serve hot.</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="recipe-card" onmouseover="showRecipeInfo('shakshuka')" onmouseout="hideRecipeInfo('shakshuka')">
+                <img src="shakshuka.jpg" alt="Recipe Image Shakshuka">
+                <p class="category">EGGS</p>
+                <p class="recipe-name">Shakshuka for One</p>
+                <div class="recipe-info" id="shakshuka">
+                    <h2>Ingredients:</h2>
+                    <ul>
+                        <li>2 eggs</li>
+                        <li>1/2 onion, chopped</li>
+                        <li>1/2 red bell pepper, chopped</li>
+                        <li>1 clove garlic, minced</li>
+                        <li>1/2 teaspoon cumin</li>
+                    </ul>
+                    <h2>Instructions:</h2>
+                    <ul>
+                        <li>Heat olive oil in a skillet over medium heat. Add chopped onion, bell pepper, and minced garlic. Cook until softened, about 5 minutes.</li>
+                        <li>Add canned tomatoes and cumin. Simmer until sauce thickens slightly, about 10 minutes.</li>
+                        <li>Make two wells in the sauce and crack eggs into them. Cover and cook until eggs are set to your liking, about 5 minutes.</li>
+                        <li>Season with salt and pepper. Serve hot with crusty bread.</li>
+                    </ul>
+                </div>
+                </div>
+            <div class="recipe-card" onmouseover="showRecipeInfo('chicken')" onmouseout="hideRecipeInfo('chicken')">
+                <img src="chicken.jpg" alt="Recipe Image Champagne Chicken">
+                <p class="category">CHICKEN</p>
+                <p class="recipe-name">Champagne Chicken</p>
+                <div class="recipe-info" id="chicken">
+                    <h2>Ingredients:</h2>
+                    <ul>
+                        <li>4 boneless, skinless chicken breasts</li>
+                        <li>1/4 cup all-purpose flour</li>
+                        <li>1/4 teaspoon salt</li>
+                        <li>1/4 teaspoon black pepper</li>
+                        <li>2 tablespoons olive oil</li>
+                        <li>1/2 cup champagne</li>
+                    </ul>
+                    <h2>Instructions:</h2>
+                    <ul>
+                        <li>In a shallow dish, combine flour, salt, and pepper. Dredge chicken breasts in flour mixture, shaking off excess.</li>
+                        <li>Heat olive oil in a large skillet over medium-high heat. Add chicken breasts and cook until golden brown on both sides, about 5 minutes per side.</li>
+                        <li>Remove chicken from skillet and keep warm. Add champagne to skillet, scraping up any browned bits from the bottom of the pan.</li>
+                        <li>Return chicken to skillet and simmer until chicken is cooked through and sauce is slightly reduced, about 10 minutes.</li>
+                        <li>Serve chicken hot, topped with sauce and garnished with chopped parsley.</li>
+                    </ul>
+                </div>
+
+            </div>
+                <div class="recipe-card">
+                    <img src="shrimp.jpg" alt="Recipe Image Garlic Shrimp">
+                    <p class="category">SHRIMP</p>
+                    <p class="recipe-name">Garlic Shrimp</p>
+                </div>
+                <div class="recipe-card">
+                    <img src="lemon tiramisu.jpg" alt="Recipe Image Lemon Tiramisu">
+                    <p class="category">TIRAMISU RECIPES</p>
+                    <p class="recipe-name">Lemon Tiramisu</p>
+                </div>
+                <div class="recipe-card">
+                    <img src="salmon.jpg" alt="Recipe Image Salmon and Veggies">
+                    <p class="category">SALMON</p>
+                    <p class="recipe-name">Salmon and Veggies</p>
+                </div>
+                <div class="recipe-card">
+                    <img src="brownie.jpg" alt="Recipe Image Banana Bread Brownies">
+                    <p class="category">BROWNIE RECIPES</p>
+                    <p class="recipe-name">Banana Bread Brownies</p>
+                </div>
+                <div class="recipe-card">
+                    <img src="lasagna cups.jpg" alt="Recipe Image Easy Lasagna Cup">
+                    <p class="category">PASTA APPETIZER RECIPES</p>
+                    <p class="recipe-name">Easy Lasagna Cups</p>
+                </div>
+                <div class="recipe-card">
+                    <img src="cod.jpg" alt="Recipe Image Baked Lemon Cod">
+                    <p class="category">COD</p>
+                    <p class="recipe-name">Baked Lemon Cod</p>
+                </div>
+                <div class="recipe-card">
+                    <img src="mac and cheese.jpg" alt="Recipe Image Classic Mac and Cheese">
+                    <p class="category">MACARONI RECIPES</p>
+                    <p class="recipe-name">Classic Mac and Cheese</p>
+                </div>
+
+</section>
+
+        <section class="view-more-arrow">
+            <img src="arrow_down.svg" width="20" alt="arrow down">
+            <p>View more</p>
+        </section>
+
+
+        <section class="text-form-container">
+            <div class="text-form">
+                <p>
+                    Are you passionate about cooking and eager to share your favourite recipes with others? We'd love to feature your culinary creations on our site! Whether you have a tried-and-true family recipe or an innovative dish you've recently concocted, we invite you to fill out the form below.<br><br>
+
+                    Simply provide us with details about your recipe, including ingredients, step-by-step instructions, and any personal tips or anecdotes you'd like to share. Feel free to include mouthwatering photos of your dish as well!<br><br>
+
+                    Once you've submitted your recipe, our team will review it and get in touch with you shortly. We can't wait to see what delicious dishes you have in store for us! Thank you for being a part of our vibrant cooking community.<br><br>
+                </p>
+            </div>
+            <div class="application-form">
+                <p>| Want to publish your recipe?</p>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email"> 
+                <button>Apply Now</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-section">
+            <nav>
+                <a href="#">DINNERS</a>
+                <a href="#">MEALS</a>
+                <a href="#">INGREDIENTS</a>
+                <a href="#">CUISINES</a>
+                <a href="#">KITCHEN TIPS</a>
+                <a href="#">NEWS</a>
+                <a href="#">ABOUT US</a>
+            </nav>
+        </div>
+        <div class="footer-section">
+            <img src="logo.svg" alt="company's logo" width="90">
+            <p>Recipes</p><br>
+            <p>Follow us</p>
+            <div class="social-media">
+                <img src="logo_instagram.svg" alt="instagram logo" width="30">
+                <img src="logo_facebook.svg" alt="facebook logo" width="30">
+                <img src="logo_twitter.svg" alt="twitter logo" width="30">
+            </div>
+        </div>
+        <div class="footer-section">
+            <p>Contact us:</p><br>
+            <p>
+                +38 (095) 123 45 67<br>
+                +38 (066) 456 24 86
+            </p><br>
+            <p>recipes@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

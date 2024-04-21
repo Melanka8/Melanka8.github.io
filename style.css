@@ -1,0 +1,352 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+}
+
+body {
+}
+
+
+.header-first {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #BE998A;
+}
+
+
+.header-navigation {
+    display: flex;
+    padding: 10px 30px;
+    background-color: #BE998A;
+    /*flex-wrap: wrap;*/
+    justify-content: space-around;
+    max-width: 100%;
+}
+
+    .header-navigation a {
+        flex-grow: 1; /* Added to make the links grow and occupy available space */
+        text-align: center; /* To center text within each link */
+        padding: 10px; /* To add padding to each link */
+    }
+
+.logo {
+    display: flex;
+    flex-direction: column; /* Stack logo and text vertically */
+    align-items: center; /* Center content horizontally */
+    width: 90px; /* Match logo width */
+}
+
+.search-bar {
+    flex: 1; /* Make search bar flexible and fill remaining space */
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    /*  margin-bottom: 10px; Optional spacing below */
+}
+
+    .search-bar input {
+        flex-grow: 1; /* Grow input to fill available space within search bar */
+        padding: 10px;
+        border: 1px solid #ccc; /* Add a border */
+        border-radius: 5px; /* Rounded corners */
+    }
+
+    .search-bar button {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer; /* Indicate clickable behavior */
+    }
+
+.social-media {
+    display: flex;
+    align-items: center;
+}
+
+.follow-text {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+
+.social-media img {
+    margin: 0 5px;
+}
+
+
+.video-container {
+    width: 100%; 
+    height: 375px;
+    position: relative; /* Enable relative positioning for child elements */
+    overflow: hidden; /* Clip excess video content if it overflows */
+}
+
+#video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; 
+    color: black; 
+    z-index: 1;
+}
+
+.main-text {
+    text-align: center;
+    margin: 0 auto; /* Remove default margin, set auto margins for centering within container */
+    padding: 20px;
+    background-color: #D9D9D9;
+    width: 400px; /* Maintain desired width */
+    position: absolute; /* Make element positionable within container */
+    top: 50%; /* Position vertically at 50% of container height */
+    left: 50%; /* Position horizontally at 50% of container width */
+    transform: translate(-50%, -50%); /* Offset to center element within container */
+}
+
+.explore-text {
+    text-align: center;
+    margin: 20px;
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    row-gap: 20px; /* Spacing between rows */
+    column-gap: 20px; /* Spacing between columns */
+    margin: 0 auto;
+    padding: 20px; /* Optional: Add padding for content spacing */
+}
+
+.recipe-card {
+    border: 1px solid black;
+    text-align: center; /* Center text within card */
+    padding: 10px; /* Add padding for content spacing */
+    position: relative;
+}
+
+    .recipe-card img {
+        width: 100%; /* Image fills card width */
+        height: 150px; /* Adjust image height as needed */
+        object-fit: cover; /* Maintain image aspect ratio and cover card area */
+    }
+
+.category {
+    color: gray; /* Set category text color */
+    font-size: 15px; /* Set category text size */
+    margin: 5px 0; /* Add spacing above and below category */
+}
+
+.recipe-name {
+    font-size: 24px; /* Set recipe name text size */
+    font-weight: bold; /* Make recipe name bold */
+}
+
+.recipe-info {
+    display: none; /* Initially hide recipe info */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 20px;
+    z-index: 1; /* Ensure recipe info stays above other elements */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds container height */
+}
+
+.view-more-arrow {
+    text-align: center;
+    margin: 20px;
+}
+
+.text-form-container {
+    display: flex; /* Use flexbox for side-by-side layout */
+    justify-content: space-between; /* Distribute sections evenly */
+    background-color: #D4B564;
+    padding: 20px 40px; /* Add padding for content spacing and industry standard distance */
+}
+
+.text-form {
+    flex: 2; /* Set text section to take up twice the space as the form */
+    color: black;
+    font-size: 18px;
+    padding: 20px 100px;
+}
+
+.application-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 100px 20px 10px;
+}
+
+    .application-form p {
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+
+    .application-form input {
+        padding: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        font-family: Jura, sans-serif;
+        font-size: 16px;
+    }
+
+.text-form-container button {
+    background-color: transparent;
+    border: 1px solid #60251D;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .text-form-container button:hover {
+        background-color: #60251D; 
+        color: white; 
+    }
+
+footer {
+    background-color: #BE998A;
+    display: flex;
+    justify-content: space-between; /* Distribute sections evenly */
+    padding: 40px 60px;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally within sections */
+    text-align: left;
+}
+
+    .footer-section nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .footer-section nav a {
+            margin-bottom: 5px;
+        }
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .navigation {
+        display: none;
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+    .dropbtn {
+        background-color: black; /* Changed background color to black */
+        color: white;
+        padding: 20px; /* Increased padding for larger size */
+        font-size: 20px; /* Increased font size for larger size */
+        border: none;
+        cursor: pointer;
+    }
+
+        /* Dropdown button on hover & focus */
+        .dropbtn:hover, .dropbtn:focus {
+            background-color: #333; /* Darker shade of black on hover */
+        }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: fixed; /* Make the dropdown fixed */
+        top: 0; /* Position it at the top */
+        left: 0; /* Position it at the left */
+        z-index: 999; /* Ensure it's above other content */
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: black; /* Changed background color to black */
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: white; /* Changed link color to white */
+            padding: 16px; /* Adjusted padding for larger size */
+            text-decoration: none;
+            display: block;
+        }
+
+            /* Change color of dropdown links on hover */
+            .dropdown-content a:hover {
+                background-color: #333; /* Darker shade of black on hover */
+            }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {
+        background-color: #333; /* Darker shade of black when dropdown is shown */
+    }
+
+    .social-media{
+        display:none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-text h1 {
+        font-size: 1.2rem; /* Adjust font size as desired */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text-form-container {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center elements horizontally */
+    }
+
+    .text-form {
+        padding: 20px; /* Adjust padding if needed */
+    }
+
+    .application-form {
+        margin: 10px auto; /* Adjust margins if needed */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logo img {
+        width: 50px; /* Adjust width as desired */
+    }
+}
